@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.booknow {
+  input {
+    background-color: white;
+  }
+  .top {
+    background: url('./images/top.png') center/cover;
+  }
+
+  .top2 {
+    background: url('./images/booknowbgimg.png') center/cover;
+    // height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+
+    .book-form {
+      display: flex;
+      flex-direction: column;
+      height: 90%;
+      width: 50%;
+      border: 2px solid white;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @media (max-width: 900px) {
+        width: 90%;
+      }
+
+      .book-now-label {
+        margin-bottom: 5px;
+      }
+
+      .form-heading {
+        display: flex;
+        height: 10%;
+        color: white;
+        font-family: Luckiest Guy;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 79px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        @media (max-width: 900px) {
+          font-size: 40px;
+        }
+      }
+
+      .details {
+        height: 90%;
+        width: 75%;
+        // background-color: rgb(18, 18, 17);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+
+        @media (max-width: 900px) {
+          width: 90%;
+        }
+
+        .input-name {
+          width: 55%;
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 900px) {
+            width: 100%;
+            margin-bottom: 12px;
+          }
+        }
+        .input-age-gender {
+          display: flex;
+          justify-content: space-between;
+          gap: 10%;
+          width: 40%;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
+
+          .input-age {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+          }
+          .input-gender {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .input-email {
+          width: 55%;
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 900px) {
+            width: 100%;
+            margin-bottom: 12px;
+          }
+        }
+        .input-number {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
+        }
+        .input-package {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .input-freebies {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .input-date {
+          width: 55%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          border-radius: 20px;
+
+          @media (max-width: 900px) {
+            width: 100%;
+            margin-bottom: 12px;
+          }
+        }
+        .input-time {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          @media (max-width: 900px) {
+            width: 100%;
+          }
+        }
+        .date-inp {
+          height: 36px;
+          border-radius: 4px;
+          padding: 0px 10px;
+          border: 1px solid hsl(0, 0%, 80%);
+        }
+        .time-inp {
+          height: 30px;
+        }
+
+        .pricing-card {
+          width: 100%;
+          min-height: 150px;
+          background-color: beige;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          color: black;
+          margin-bottom: 4%;
+        }
+      }
+    }
+  }
+
+  .heading {
+    color: #fff;
+    font-family: Luckiest Guy;
+    font-size: 74.619px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.089px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 600px) {
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+}
+
+//circular loader scss
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Place overlay above other content */
+}
+
+.loading-overlay > .MuiCircularProgress-colorPrimary {
+  color: white; /* Change loader color */
+}

@@ -1,0 +1,95 @@
+.car-top-heading {
+  z-index: 1;
+  font-family: Saira;
+  font-size: 71px;
+  font-weight: 800;
+  line-height: 112px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+
+  @media (max-width: 1015px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (max-width: 563px) {
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @media (max-width: 441px) {
+    font-size: 29px;
+    line-height: 30px;
+  }
+}
+.car-bottom-heading {
+  font-family: Luckiest Guy;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 85px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff504;
+
+  @media (max-width: 1015px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (max-width: 881px) {
+    font-size: 50px;
+    line-height: 50px;
+    // bottom: 20%;
+  }
+  @media (max-width: 441px) {
+    font-size: 33px;
+    line-height: 33px;
+    // bottom: 33%;
+    // margin-left: -4rem;
+  }
+}
+
+.car-bottom-btn {
+  position: absolute;
+  bottom: 25%;
+  right: 100px;
+
+  @media (max-width: 752px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .car-bottom-botton {
+    background-color: #e1dc3e;
+    height: 100px;
+    width: 270px;
+
+    @media (max-width: 1015px) {
+      height: 50px;
+      width: 250px;
+    }
+
+    @media (max-width: 752px) {
+      margin-bottom: -2rem;
+      height: 40px;
+      width: 150px;
+      font-size: 18px;
+    }
+  }
+}
+.car-bottom-refer {
+  position: absolute;
+  bottom: 19%;
+  right: 120px;
+  z-index: 1;
+  color: white;
+  font-family: Saira;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @media (max-width: 1015px) {
+    display: none;
+  }
+}

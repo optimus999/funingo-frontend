@@ -1,0 +1,40 @@
+*{
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .Packages {
+    .top {
+      background: url('./images/img1.png') center/cover; 
+      
+  
+    }
+   
+
+    .heading {
+      color: #fff;
+      font-family: Luckiest Guy;
+      font-size: 74.619px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 7.089px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      
+  
+      @media (max-width: 600px) {
+        font-size: 40px;
+        font-weight: 400;
+      }
+  }
+  
+    
+  }
+    
